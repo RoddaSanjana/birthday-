@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎉 Happy Birthday! 🎂</h1>
+    <p>Wishing you a day filled with love, laughter, and happiness.</p>
+    
+    <!-- Birthday Wish Cards -->
+    <div class="cards">
+      <div class="card">
+        <h3>🎈 just for you kulli </h3>
+        <p>Thank you for always being there for me. Wishing you endless joy today and always!</p>
+      </div>
+      <div class="card">
+        <h3>🎁 Cheers to you</h3>
+        <p>May this year bring you success, happiness, and all the things you dream of. Happy Birthday!</p>
+      </div>
+      <div class="card">
+        <h3>🍰 Happy Birthday, my dear kulli!... 🎉 </h3>
+        <p>
+You deserve all the happiness in the world for the amazing person you are. Here's to new adventures, unforgettable memories, and a year that's even better than the last. Cheers to you and your beautiful soul! 🥳🎂🎈</p>
+      </div>
+    </div>
+
+    <button id="playMusic">Play Birthday Song</button>
+  </div>
+
+  <audio id="birthdaySong" src="birthday.mp3"></audio>
+  
+  <script>
+    const playButton = document.getElementById('playMusic');
+    const song = document.getElementById('birthdaySong');
+
+    playButton.addEventListener('click', () => {
+      song.play();
+    });
+  </script>
+
+</body>
+</html>
